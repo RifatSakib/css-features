@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+
+    display: flex;
+    flex-direction: row;
+
+    /* if we dont want to use media query ,simpli use
+    
+    flex-wrap: wrap; */
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.food{
+
+    border: 3px solid lightgray;
+    border-radius: 30px;
+    margin: 10px;
+    width: 300px;
+}
+.food img{
+
+    width: 100%;
+}
+@media (max-width:760px)  {
+    .container{
+
+        flex-direction: column;
+    }
+
+}
+    .container .food {
+
+    background-color: rosybrown;
+                     }
+@media (min-width: 1200px) {
+ 
+    .container .food {
+
+background-color: rgb(9, 196, 243);
+}
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- .food*6>img[src="images/food.jpg"]+p>lorem*20 -->
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde consequatur obcaecati, sed esse dolor saepe. Aut saepe maxime perferendis.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Ad, fugit? Voluptates esse amet dolores accusamus ullam voluptas, rem sed repudiandae deserunt tempore commodi quibusdam minus nemo fugiat expedita?</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Porro impedit illum aperiam numquam, obcaecati recusandae magni dolorem labore corporis officiis placeat reiciendis odio dolores tempore! Sit, ab nisi.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Minus omnis commodi voluptates assumenda vel dolor sapiente obcaecati cumque amet, error quas sequi repellendus ullam pariatur mollitia beatae neque.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Officia deleniti voluptatibus explicabo nesciunt ad, inventore fugiat laudantium, odit quos vero dolorum repellat quisquam earum aut ratione, et eos?</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Reprehenderit ipsum sequi eaque ipsam suscipit amet perferendis ea pariatur quaerat cumque aut ullam ad exercitationem nesciunt alias, ut animi.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
